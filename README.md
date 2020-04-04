@@ -20,5 +20,7 @@ The fuzzing targets were the LAVA-M corpus downloadable from [moyix.net](http://
 ## Structure
 
 - `data/` includes all measurement data for the 8 target configurations of the 4 fuzzing targets
+- `plots/` some plots generated with gnuplot from the measurement data
 - `base64-harvesting-results.sh` example script that captures `gcovr`-coverage data from discovered path's (AFL) for base64 and writes data files `*-cov.dat` with structure `<all lines> <not covered lines> <covered lines>`
 - `aggregate.sh <directory>` aggregates the coverage data from the harvesting script with the timestampts from AFLs `plot_data`-files and writes data files `*-covtime.dat` with structure `<relative time [s]> <covered lines>`
+- `plots.gnuplot` gnuplot-script for generating the plots in the `plots` directory
