@@ -24,3 +24,19 @@ The fuzzing targets were the LAVA-M corpus downloadable from [moyix.net](http://
 - `base64-harvesting-results.sh` example script that captures `gcovr`-coverage data from discovered path's (AFL) for base64 and writes data files `*-cov.dat` with structure `<all lines> <not covered lines> <covered lines>`
 - `aggregate.sh <directory>` aggregates the coverage data from the harvesting script with the timestampts from AFLs `plot_data`-files and writes data files `*-covtime.dat` with structure `<relative time [s]> <covered lines>`
 - `plots.gnuplot` gnuplot-script for generating the plots in the `plots` directory
+
+## Plots
+
+### Crashes over time
+
+![Plot: base64 crashes over time](plots/base64-crashes-over-time.svg)
+![Plot: md5sum crashes over time](plots/md5sum-crashes-over-time.svg)
+![Plot: who crashes over time](plots/who-crashes-over-time.svg)
+![Plot: uniq crashes over time](plots/uniq-crashes-over-time.svg)
+
+### Linecoverage over time
+
+![Plot: base64 coverage over time](plots/base64-coverage-over-time.svg)
+![Plot: md5sum coverage over time](plots/md5sum-coverage-over-time.svg)
+![Plot: who coverage over time](plots/who-coverage-over-time.svg)
+![Plot: uniq coverage over time](plots/uniq-coverage-over-time.svg)
